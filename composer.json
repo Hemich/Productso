@@ -1,0 +1,47 @@
+{
+    "name": "Hemich/productso",
+    "type": "library",
+    "description": "Product packege laravel 5.2",
+    "keywords": [
+        "Hemich",
+        "productso"
+    ],
+    "homepage": "https://github.com/Hemich/productso",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Hemich",
+            "email": "roman.hemich@gmail.com",
+            "homepage": ":author_website",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hemich\\productso\\": "src",
+            "Hemich\\Productso\\Http\\Controllers\\": "src/Http/Controllers/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hemich\\productso\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
